@@ -22,10 +22,10 @@ import static springfox.documentation.builders.PathSelectors.regex;
 @Import(BeanValidatorPluginsConfiguration.class)
 public class SwaggerConfig {
     @Bean
-    public Docket customerApi() {
+    public Docket userApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("az.mypractisesecond.mypractisespringboot.controller"))
+                .apis(RequestHandlerSelectors.basePackage("az.mypractisesecond.mypractiseseecondspringboot.controller"))
                 .paths(regex("/.*"))
                 .build()
                 .apiInfo(metaData());
