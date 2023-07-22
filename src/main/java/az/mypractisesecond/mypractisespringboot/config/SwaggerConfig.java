@@ -25,7 +25,7 @@ public class SwaggerConfig {
     public Docket userApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("az.mypractisesecond.mypractiseseecondspringboot.controller"))
+                .apis(RequestHandlerSelectors.basePackage("az.mypractisesecond.mypractisespringboot"))
                 .paths(regex("/.*"))
                 .build()
                 .apiInfo(metaData());
